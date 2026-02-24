@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Interactive Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Site header with navigation, logo, theme and navigation toggles -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">My<span>Portfolio</span></div>
+      <nav class="nav">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark theme">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: Introduction with greeting, headline, roles, and call-to-actions -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Sucharita Karmakar</h1>
+          <h2 class="hero-role">Front-End Developer</h2>
+          <p class="hero-description">
+            I build clean, responsive and interactive web experiences using modern web technologies.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary-btn">View Projects</a>
+            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-avatar">
+            <span>SK</span>
+          </div>
+          <div class="hero-badges">
+            <div class="badge">HTML • CSS • JavaScript</div>
+            <div class="badge">Responsive Design</div>
+            <div class="badge">Open to Opportunities</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT: A short introduction and personal details -->
+    <section id="about" class="section">
+      <div class="container section-content two-column">
+        <div>
+          <h2 class="section-title">About Me</h2>
+          <p>
+            I'm a passionate web developer who enjoys turning ideas into interactive experiences.
+            I focus on writing clean, accessible code and creating user-friendly interfaces.
+          </p>
+          <p>
+            When I'm not coding, I love learning new technologies, exploring design trends, and
+            working on personal projects that challenge me to grow.
+          </p>
+        </div>
+        <div class="about-details">
+          <div class="about-item">
+            <span class="about-label">Location</span>
+            <span class="about-value">Your City, Country</span>
+          </div>
+          <div class="about-item">
+            <span class="about-label">Experience</span>
+            <span class="about-value">1+ years (personal &amp; academic)</span>
+          </div>
+          <div class="about-item">
+            <span class="about-label">Looking for</span>
+            <span class="about-value">Internships / Junior roles / Freelance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS: Cards for your technical skills, tools, and current learning focus -->
+    <section id="skills" class="section alt-section">
+      <div class="container section-content">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-intro">
+          Here are some of the technologies and tools I work with.
+        </p>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Front-End</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3 (Flexbox &amp; Grid)</li>
+              <li>JavaScript (ES6+)</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Tools &amp; Workflow</h3>
+            <ul>
+              <li>Git &amp; GitHub</li>
+              <li>Responsive Design</li>
+              <li>Browser DevTools</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Currently Learning</h3>
+            <ul>
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>UI/UX Best Practices</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS: Cards layout dashboard -->
+    <section id="projects" class="section">
+      <div class="container section-content">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-intro">
+          A selection of projects that showcase my skills and interests.
+        </p>
+
+        <!-- Filter buttons -->
+        <div class="projects-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="ui">UI</button>
+          <button class="filter-btn" data-filter="other">Other</button>
+        </div>
+
+        <!-- Projects grid -->
+        <div class="projects-grid">
+          <article class="project-card" data-category="web">
+            <h3>Responsive Landing Page</h3>
+            <p>
+              A modern landing page with responsive layout, smooth scrolling and interactive elements.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">Code</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="ui">
+            <h3>Portfolio UI Concept</h3>
+            <p>
+              A concept design for a portfolio website focusing on clean typography and layout.
+            </p>
+            <div class="project-tags">
+              <span>Figma</span><span>UI Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Preview</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web">
+            <h3>Todo List App</h3>
+            <p>
+              A simple task manager with filtering, local storage and light/dark themes.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>LocalStorage</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">Code</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="other">
+            <h3>Mini Games Collection</h3>
+            <p>
+              A small collection of browser-based mini games built for fun and learning.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>Canvas</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="#" class="project-link">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT: Form for messages and other contact channels -->
+    <section id="contact" class="section alt-section">
+      <div class="container section-content">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-intro">
+          Interested in working together or just want to say hi? Reach out using the form below.
+        </p>
+        <div class="contact-grid">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn full-width">Send Message</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-info">
+            <h3>Other ways to reach me</h3>
+            <ul>
+              <li><strong>Email:</strong> your.email@example.com</li>
+              <li><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</li>
+              <li><strong>GitHub:</strong> github.com/yourusername</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Simple footer; year filled dynamically by script.js -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Sucharita Karmakar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- External JS for interactions like navigation and dark mode -->
+  <script src="script.js"></script>
+</body>
+</html>
