@@ -21,7 +21,7 @@
     --bg: #f3f4f6;
     --bg-elevated: #ffffff;
     --bg-alt: #e5e7eb;
-    --text: #111827;
+    --text: rgb(0,0,0);
     --text-muted: #4b5563;
     --accent: #2563eb;
     --accent-soft: rgba(37, 99, 235, 0.08);
