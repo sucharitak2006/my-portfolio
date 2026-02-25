@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - Projects</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">My<span>Portfolio</span></div>
+      <nav class="nav">
+        <a href="../index.html#hero" class="nav-link">Home</a>
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects" class="section">
+      <div class="container section-content">
+        <h1 class="section-title">Projects</h1>
+        <p class="section-intro">
+          A collection of my personal and practice projects. Click any tile to view the live demo or details.
+        </p>
+
+        <div class="projects-grid">
+          <!-- Example project tile -->
+          <a href="to-do-list/index.html" class="project-tile">
+            <div class="project-tile-inner">
+              <h2 class="project-tile-title">Todo List App</h2>
+              <p class="project-tile-description">
+                A simple task manager with add, complete, and filter functionality for daily productivity.
+              </p>
+              <div class="project-tile-meta">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Duplicate and adjust these tiles as you add more projects -->
+          <a href="portfolio-concept/index.html" class="project-tile">
+            <div class="project-tile-inner">
+              <h2 class="project-tile-title">Portfolio Concept</h2>
+              <p class="project-tile-description">
+                A clean portfolio layout exploring typography, spacing, and subtle micro-interactions.
+              </p>
+              <div class="project-tile-meta">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="mini-games/index.html" class="project-tile">
+            <div class="project-tile-inner">
+              <h2 class="project-tile-title">Mini Games Collection</h2>
+              <p class="project-tile-description">
+                A set of small browser games built to practice logic, state management, and animations.
+              </p>
+              <div class="project-tile-meta">
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Canvas</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Sucharita Karmakar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
